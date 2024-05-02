@@ -1,0 +1,39 @@
+<meta charset="UTF-8">
+
+<input/>
+<button>Compare com o meu segredo</button>
+
+
+<script> 
+
+	var segredos = [5,7,10,2];//array
+
+	var input = document.querySelector("input");// documento pega do html essa tag "input" e joga na variavel input para trabalhar em java script
+	input.focus();
+
+	function verifica()
+	{
+		var achou = false;
+
+		for(var posicao = 0; posicao < segredos.length; posicao++){
+	//valor que vai digitar na caixa
+		if(input.value == segredos [posicao])
+		{
+
+		alert("Você acertou!");
+		achou = true;
+		break;
+
+		}
+	}
+		if(achou ==false){
+		alert("Você errou!!!");
+	}
+		input.value = "";// limpa o campo digitado
+		input.focus(); // volta o foco para caixa de texto
+	}
+	var button = document.querySelector("button");
+
+	button.onclick = verifica;
+
+</script>

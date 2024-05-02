@@ -1,0 +1,31 @@
+<meta charset="utf-8">
+<script> 
+	
+	function pulaLinha() {
+
+		document.write("<br>");
+		document.write("<br>");
+		
+	}
+	
+	function mostra (frase) {
+
+		document.write(frase);
+		pulaLinha();
+	}
+	// função recebe dois parâmetros
+	function calculaImc(altura, peso) {
+
+		var imc = peso / (altura * altura);
+		return imc;// vai retornar o imc do Flávio e do Amigo
+	}
+	
+	var nome = prompt ("Informe o seu nome");// se colocar o alert não deixa digitar, por isso o uso do prompt.
+	var alturaInformada = prompt(nome + ", informe sua altura em metros");
+	var pesoInformado =prompt (nome + ", informe o seu peso");
+
+	var imc = calculaImc (alturaInformada, pesoInformado);
+
+	document.write (nome + ", o seu IMC é " + imc);
+		
+</script>

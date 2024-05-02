@@ -1,0 +1,28 @@
+<meta charset="utf-8">
+<script> 
+	
+	function pulaLinha() {
+
+		document.write("<br>");
+		document.write("<br>");
+		
+	}
+	
+	function mostra (frase) {
+
+		document.write(frase);
+		pulaLinha();
+	}
+	// função recebe dois parâmetros
+	function calculaImc(altura, peso) {
+
+		var imc = peso / (altura * altura);
+		return imc;// vai retornar o imc do Flávio e do Amigo
+	}
+	
+	// somar dois imc's diferentes
+	var totalImc = calculaImc(1.70, 85)+ calculaImc(1.80, 103);
+
+	document.write ("A soma dos imc's é " + totalImc);
+		
+</script>
